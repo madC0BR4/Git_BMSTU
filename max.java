@@ -4,7 +4,7 @@ public class Main {
     public static int max(int[] arr){
         int m = arr[0];
         for (int i=1; i<arr.length; i++){
-            if (arr[i]>m) {
+            if (arr[i]<m) {
                 m = arr[i];
             }
         }
@@ -21,7 +21,7 @@ public class Main {
             int a = myObj.nextInt();
             arr[i] = a;
         }
-        System.out.print("Max number is: ");
+        System.out.print("Min number is: ");
         System.out.println(max(arr));
     } 
 }
